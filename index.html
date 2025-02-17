@@ -3,109 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of BALLU DON'S CRICKET CLUB. Meet our champions and join us for upcoming matches!">
+    <meta name="description" content="BALLU DON'S CRICKET CLUB - Nanded, Maharashtra">
     <title>BALLU DON'S CRICKET CLUB</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Hero Section -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#matches">Upcoming Matches</a></li>
-                <li><a href="#participate">Join Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="hero">
+            <h1 class="floating-text">BALLU DON'S CRICKET CLUB</h1>
+            <p class="floating-text">Join the Champions and Stay Updated with Upcoming Matches!</p>
+        </div>
     </header>
 
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to BALLU DON'S CRICKET CLUB</h1>
-            <p>We are champions on the turfs of Nanded, Maharashtra. Led by our captain, Mohammed Zaid Alishan, we strive for excellence both on and off the field.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Our cricket club is made up of passionate cricketers who are committed to playing with heart and teamwork. Led by the exceptional **Captain Mohammed Zaid Alishan**, we are a squad of fearless competitors always aiming for victory. Join us and be a part of our journey.</p>
-    </section>
-
+    <!-- Team Section -->
     <section id="team">
-        <h2>Meet the Team</h2>
+        <h2 class="floating-text">Meet Our Star Players</h2>
+
         <div class="team-member">
-            <h3>Mohammed Zaid Alishan (Captain)</h3>
-            <p>A brilliant batsman and a winning leader. Zaid has the capability to change the game with his bat and is a true match-winner. As captain, he leads by example, ensuring the team remains united and focused on victory.</p>
+            <div class="player-image-placeholder"></div>
+            <h3>Mohammed Zaid Alishan</h3>
+            <p>Captain, Batsman, and Match-Winner. Known for his leadership and solid batting skills. A lucky charm for the team!</p>
         </div>
+
         <div class="team-member">
-            <h3>Mohammed Amaan</h3>
-            <p>A versatile player known for his strong batting and bowling skills. Amaan is a key asset to the team and has delivered many match-winning performances.</p>
-        </div>
-        <div class="team-member">
+            <div class="player-image-placeholder"></div>
             <h3>Muneef Shaikh</h3>
-            <p>Known as **Muneef Bhai**, he’s an excellent all-rounder. Specializing in batting, he can turn the game around at any point. His energy on the field is unmatched.</p>
+            <p>An all-rounder, specializing in batting. Muneef Bhai is a versatile player known for his excellent skills in all aspects of cricket.</p>
         </div>
+
         <div class="team-member">
+            <div class="player-image-placeholder"></div>
             <h3>Syed Shadab Laiquddin</h3>
-            <p>A powerful batsman, **Syed Shadab Laiquddin** is known for his incredible sixes and fours. He’s a consistent run-scorer who makes the game thrilling for fans.</p>
+            <p>Known for his powerful batting skills, Shadab is famous for hitting sixes and fours to win the game!</p>
         </div>
-        <div class="team-member">
-            <h3>Subur Khan</h3>
-            <p>Subur is a bowler with pinpoint accuracy. His wicket-taking ability and athletic catches make him a true asset in tight matches.</p>
-        </div>
-        <div class="team-member">
-            <h3>Gulaam Nazaar</h3>
-            <p>Known for his incredible fielding, **Gulaam Nazaar** is a game-changer. He can take crucial catches and make key stops at critical moments.</p>
-        </div>
-        <div class="team-member">
-            <h3>Mohammed Abdullah</h3>
-            <p>An exceptional fielder, **Mohammed Abdullah** is renowned for his catch-taking skills that turn games in the team’s favor.</p>
-        </div>
-        <div class="team-member">
-            <h3>Syed Abdul Rahman</h3>
-            <p>Reliable at the field, **Syed Abdul Rahman** is known for his quick single runs and his ability to support the team at every opportunity.</p>
-        </div>
+
+        <!-- Add more team members as needed -->
     </section>
 
+    <!-- Upcoming Matches Section -->
     <section id="matches">
-        <h2>Upcoming Matches</h2>
-        <ul>
-            <li>**Match 1**: BALLU DON'S vs [Opponent] | Date: [Match Date] | Location: Nanded Turf</li>
-            <li>**Match 2**: BALLU DON'S vs [Opponent] | Date: [Match Date] | Location: Nanded Turf</li>
-            <li>**Match 3**: BALLU DON'S vs [Opponent] | Date: [Match Date] | Location: Nanded Turf</li>
-        </ul>
+        <h2 class="floating-text">Upcoming Matches</h2>
+        <div class="match">
+            <h3>BALLU DON'S vs Opponent 1</h3>
+            <p>Date: 20th Feb 2025 | Location: Nanded Turf</p>
+        </div>
+        <div class="match">
+            <h3>BALLU DON'S vs Opponent 2</h3>
+            <p>Date: 25th Feb 2025 | Location: Nanded Turf</p>
+        </div>
     </section>
 
-    <section id="participate">
-        <h2>Join Us</h2>
-        <p>Ready to be part of the champions? Fill in the form below to join us in upcoming matches!</p>
-        <form action="submit_form.php" method="POST">
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="floating-text">Contact Us</h2>
+        <form action="mailto:mohammedzaidalishan26@gmail.com" method="post" enctype="text/plain">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            
             <label for="mobile">Mobile Number:</label>
             <input type="tel" id="mobile" name="mobile" required>
-            <label for="team">Do you have a team? (Optional):</label>
-            <input type="text" id="team" name="team">
+            
+            <label for="team">Do you have a team to join us?</label>
+            <select id="team" name="team">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
             <button type="submit">Submit</button>
         </form>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>For any queries, please contact us via email:</p>
-        <ul>
-            <li>General Inquiries: <a href="mailto:mohammedzaidalishan26@gmail.com">mohammedzaidalishan26@gmail.com</a></li>
-            <li>Virtual Support: <a href="mailto:mohammedzaidalishanvirtualassistant@gmail.com">mohammedzaidalishanvirtualassistant@gmail.com</a></li>
-        </ul>
-        <p>Join our WhatsApp group for quick updates and match discussions: [WhatsApp Group Link]</p>
-    </section>
-
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 BALLU DON'S CRICKET CLUB. All rights reserved.</p>
+        <p>Website by <strong>Mohammed Zaid Alishan</strong></p>
+        <p>For more information or queries, contact us at: <a href="mailto:mohammedzaidalishan26@gmail.com">mohammedzaidalishan26@gmail.com</a> or <a href="mailto:mohammedzaidalishanvirtualassistant@gmail.com">mohammedzaidalishanvirtualassistant@gmail.com</a></p>
     </footer>
 </body>
 </html>
